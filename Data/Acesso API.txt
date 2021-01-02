@@ -1,0 +1,51 @@
+https://dadosabertos.bcb.gov.br/dataset/taxas-de-cambio-todos-os-boletins-diarios
+
+ Taxas de Câmbio - todos os boletins diários
+Conceito:
+
+Séries de boletins diários de taxas de câmbio disponíveis desde 2 de janeiro de 2002, para o euro, e desde 28 de novembro de 1984, para as demais moedas. Para o dólar, refere-se às taxas administradas até março de 1990 e às taxas livres a partir de então (Resolução 1690, de 18.3.1990). As taxas administradas são aquelas fixadas pelo Banco Central; a partir de março de 1992, essa taxa recebeu a denominação de taxa PTAX (fechamento). Até 30 de junho de 2011, as taxas livres correspondem à média das taxas efetivas de operações no mercado interbancário, ponderada pelo volume de transações do dia. A partir de 1 de julho de 2011 (Circular 3506, de 23.9.2010), a Ptax passou a corresponder à média aritmética das taxas obtidas em quatro consultas diárias aos dealers de câmbio e refletem a taxa negociada no momento de abertura da janela de consulta; o boletim de fechamento PTAX corresponde à média aritmética das taxas dos boletins do dia. As paridades das outras moedas contra o dólar americano (USD), são obtidas junto a agências de informação. As cotações em relação à unidade monetária corrente são baseadas nas cotações da unidade monetária corrente contra o USD divididas pelas paridades contra o USD para as moedas tipo A, e multiplicadas pelas paridades contra o USD para as moedas tipo B.
+Moedas disponíveis para consulta:
+
+    coroa dinamarquesa (DKK) Tipo A
+    coroa norueguesa (NOK) Tipo A
+    coroa sueca (SEK) Tipo A
+    dólar americano (USD) Tipo A
+    dólar australiano (AUD) Tipo B
+    dólar canadense (CAD) Tipo A
+    euro (EUR) Tipo B
+    franco suíço (CHF) Tipo A
+    iene (JPY) Tipo A
+    libra esterlina (GBP) Tipo B
+
+Unidades de medida:
+
+Moedas tipo A: Paridade (dólar): Quantidade da moeda por uma unidade de dólar americano (USD);
+Cotação (unidade monetária corrente): Quantidade de moeda corrente por uma unidade da moeda
+
+Moedas tipo B: Paridade (dólar): Quantidade de dólar americano (USD) por uma unidade da moeda;
+Cotação (unidade monetária corrente): Quantidade de moeda corrente por uma unidade da moeda
+
+Exemplo de cálculo da cotação das moedas tipo A em unidade monetária corrente, considerando o real (BRL) como unidade monetária corrente e o dólar canadense (CAD) como moeda estrangeira:
+
+Cotação de Compra CADBRL = Cotação USDBRL de Compra ÷ Paridade USDCAD de Venda
+Cotação de Venda CADBRL = Cotação USDBRL de Venda ÷ Paridade USDCAD de Compra
+
+Exemplo de cálculo da cotação das moedas tipo B em unidade monetária corrente, considerando o real (BRL) como unidade monetária corrente e o euro (EUR) como moeda estrangeira:
+
+Cotação de Compra EURBRL = Paridade EURUSD de Compra × Cotação USDBRL de Compra
+Cotação de Venda EURBRL = Paridade EURUSD de Venda × Cotação USDBRL de Venda
+Fonte: Thomson Reuters, exceto o USDBRL
+
+Exemplo de URL
+
+
+
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda='USD'&@dataInicial='01-02-2002'&@dataFinalCotacao='12-30-2020'&$format=text/csv&$select=paridadeCompra,paridadeVenda,cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim 
+
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda='GBP'&@dataInicial='01-02-2002'&@dataFinalCotacao='12-30-2020'&$format=text/csv&$select=paridadeCompra,paridadeVenda,cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim 
+
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda='EUR'&@dataInicial='01-02-2002'&@dataFinalCotacao='12-30-2020'&$format=text/csv&$select=paridadeCompra,paridadeVenda,cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim 
+
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda='JPY'&@dataInicial='01-02-2002'&@dataFinalCotacao='12-30-2020'&$format=text/csv&$select=paridadeCompra,paridadeVenda,cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim 
+
+https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaPeriodo(moeda=@moeda,dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@moeda='CHF'&@dataInicial='01-02-2002'&@dataFinalCotacao='12-30-2020'&$format=text/csv&$select=paridadeCompra,paridadeVenda,cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim 
